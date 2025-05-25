@@ -1,0 +1,39 @@
+# .gitignore for prometheus-grafana-claude
+# Ignore Docker volumes
+prometheus_data/
+grafana_data/
+
+# Ignore Prometheus and Grafana data directories (if any)
+/data/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore editor/project files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore environment files
+.env
+.env.*
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore node_modules if any JS tooling is added
+node_modules/
+
+# Ignore Python cache if any Python scripts are used
+__pycache__/
+*.pyc
+
+# Ignore exporter data (if any)
+/etc/prometheus/exporters/*/data/
